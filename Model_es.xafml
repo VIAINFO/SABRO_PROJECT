@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="ViaMobile" Company="Viainfo">
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="EmptyLabel" Value="Toque para seleccionar la imagen" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Plataforma">
+        <Items>
+          <Item Id="VentaenRuta_Copy" Caption="Visitados" />
+          <Item Id="AboutInfo" Caption="Entregar" />
+          <Item Id="Inventario" Caption="Inventario" />
+          <Item Id="Rendicion" Caption="Rendicion" />
+          <Item Id="ReportsV2" Caption="Reportes" />
+        </Items>
+      </Item>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="ReportsV2" Caption="Reportes" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="ARRIBO_DetailView">
+      <Items>
+        <PropertyEditor Id="ENC_ENCOMIENDAs" Caption="Encomiendas" />
+        <PropertyEditor Id="VALIJA_CANTIDAD" Caption="Valija Cantidad" />
+      </Items>
+    </DetailView>
+    <ListView Id="ARRIBO_ListView" Caption="Arribo" />
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView">
+      <Items>
+        <StaticText Id="LogonText" Text="Bienvenido! Por favor ingrese su nombre de usuario y contraseña a continuación." Caption="" />
+        <PropertyEditor Id="Password" ToolTip="Ingrese su Contraseña" />
+        <StaticText Id="PasswordHint" Text="@ Desarrollado por Viainfo 2018" Caption="" />
+        <PropertyEditor Id="UserName" Caption="Usuario" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="RootGroup">
+            <LayoutGroup Id="ImageGroup" Caption="ImageGroup(3)" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Para cambiar su contraseña, por favor, introduzca su contraseña anterior y la nueva en los campos de texto a continuación_1" />
+      </Items>
+    </DetailView>
+    <DetailView Id="CON_RENDICION_DET_DetailView" Caption="Gastos">
+      <Items>
+        <PropertyEditor Id="COD_CCTBLE" Caption="Tipo Gasto" />
+        <PropertyEditor Id="COMENTARIO" Caption="Comentario" />
+        <PropertyEditor Id="FECHA" Caption="Fecha" />
+        <PropertyEditor Id="MONTO" Caption="Monto" />
+        <PropertyEditor Id="NUMDOC" Caption="Num Doc" />
+        <PropertyEditor Id="Photo" Caption="Imagen" />
+        <PropertyEditor Id="TIPODOC" Caption="Tipo Doc" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CON_RENDICION_DET" Caption=" ">
+              <LayoutGroup Id="CON_RENDICION_DET_col2" Caption="CON_RENDICION_DET_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CON_RENDICION_DET_ListView" Caption="Lista de Gastos" />
+    <DetailView Id="ENC_ENCOMIENDA_DetailView" Caption="Encomienda">
+      <Items>
+        <PropertyEditor Id="COD_PROPIO" Caption="Codigo Propio" />
+        <PropertyEditor Id="ESTADO" Caption="Estado" />
+        <PropertyEditor Id="ID_ENCOMIENDA" Caption="Encomienda" />
+        <PropertyEditor Id="TIPO" Caption="Bulto" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ENC_ENCOMIENDA">
+              <LayoutGroup Id="ENC_ENCOMIENDA_col2" Caption="ENC_ENCOMIENDA_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ENC_ORDEN_DetailView">
+      <Items>
+        <PropertyEditor Id="ENC_ENCOMIENDAs" Caption="Detalle Encomiendas" />
+        <PropertyEditor Id="Photo" Caption="Foto" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item1" Caption="Item1" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ENTREGAR_DetailView">
+      <Items>
+        <PropertyEditor Id="ENC_ENCOMIENDAs" Caption="Encomiendas" />
+        <PropertyEditor Id="VALIJA_CANTIDAD" Caption="Valija Cantidad" />
+      </Items>
+    </DetailView>
+    <ListView Id="ENTREGAR_ListView" Caption="Entregar">
+      <Columns>
+        <ColumnInfo Id="ID_ORDEN" Caption="ORDEN" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RETIRAR_DetailView">
+      <Items>
+        <PropertyEditor Id="ENC_ENCOMIENDAs" Caption="Encomiendas" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item1" Caption="Item1" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RETIRAR_ENCOMIENDA_ListView" Caption="Encomiendas_1" />
+    <DetailView Id="VEN_RUTA_CLI_DetailView" Caption="Cliente">
+      <Items>
+        <PropertyEditor Id="CREDITO" Caption="Credito" />
+        <PropertyEditor Id="FACTURADA" Caption="Facturada" />
+        <PropertyEditor Id="FORMAPAGO" Caption="Forma Pago" />
+        <PropertyEditor Id="ID_VEN_RUTA_CLI" Caption="ID" />
+        <PropertyEditor Id="MEDIOPAGO" Caption="Medio Pago" />
+        <PropertyEditor Id="RECAUDADO" Caption="Recaudado" />
+        <PropertyEditor Id="SALDO" Caption="Saldo" />
+        <PropertyEditor Id="TOTALVENDIDO" Caption="Total Vendido" />
+        <PropertyEditor Id="VENDIDO" Caption="Vendido" DisplayFormat="{0:N0}" EditMask="N0" />
+        <PropertyEditor Id="VISITADO" Caption="Visitado" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="VEN_RUTA_CLI" Caption=" ">
+              <LayoutGroup Id="VEN_RUTA_CLI_col1">
+                <LayoutGroup Id="Auto01f6346f-0229-4c0f-82a6-d033c4c84713" Caption="Auto01f6346f-0229-4c0f-82a6-d033c4c84713(8)" />
+                <LayoutGroup Id="Auto56efde8a-c849-4852-bbb9-fdb4e9ca6508" Caption="Auto56efde8a-c849-4852-bbb9-fdb4e9ca6508(11)">
+                  <LayoutGroup Id="Auto12adb3c2-9873-4916-9025-678c5190887e" Caption="Auto12adb3c2-9873-4916-9025-678c5190887e(14)" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="VEN_RUTA_CLI" Caption=" ">
+            <LayoutGroup Id="VEN_RUTA_CLI_col1">
+              <LayoutGroup Id="Auto01f6346f-0229-4c0f-82a6-d033c4c84713" Caption="Auto01f6346f-0229-4c0f-82a6-d033c4c84713(8)" />
+              <LayoutGroup Id="Auto56efde8a-c849-4852-bbb9-fdb4e9ca6508" Caption="Auto56efde8a-c849-4852-bbb9-fdb4e9ca6508(11)">
+                <LayoutGroup Id="Auto12adb3c2-9873-4916-9025-678c5190887e" Caption="Auto12adb3c2-9873-4916-9025-678c5190887e(14)" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="VEN_RUTA_CLI_ING_DetailView" Caption="Ingreso">
+      <Items>
+        <PropertyEditor Id="FECHADOC" Caption="Fecha" />
+        <PropertyEditor Id="MONTO" Caption="Monto" />
+        <PropertyEditor Id="NUMERODOC" Caption="Numero" />
+        <PropertyEditor Id="SALDO" Caption="Saldo" />
+        <PropertyEditor Id="TDOC_DESCRIPCION" Caption="Documento" />
+        <PropertyEditor Id="TIPODOC" Caption="Tipo Doc" />
+        <PropertyEditor Id="VENCIMIENTO" Caption="Vencimiento" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="VEN_RUTA_CLI_ING" Caption="Documento Pendiente">
+              <LayoutGroup Id="VEN_RUTA_CLI_ING_col1">
+                <LayoutGroup Id="Item1" Caption="Paga Con:" />
+              </LayoutGroup>
+              <LayoutGroup Id="VEN_RUTA_CLI_ING_col2" Caption="VEN_RUTA_CLI_ING_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="VEN_RUTA_CLI_ListView" Caption="Ruta" />
+    <ListView Id="VEN_RUTA_CLI_ListView_Vistados" Caption="Visitados" />
+    <ListView Id="VEN_RUTA_CLI_VEN_RUTA_CLI_INGs_ListView">
+      <Columns>
+        <ColumnInfo Id="MONTO" Caption="Pago" />
+        <ColumnInfo Id="TDOC_DESCRIPCION" Caption="Documento" />
+        <ColumnInfo Id="NUMERODOC" Caption="Numero" />
+        <ColumnInfo Id="SALDO" Caption="Saldo" />
+      </Columns>
+    </ListView>
+    <ListView Id="VEN_RUTA_CLI_VEN_RUTA_VTAs_ListView">
+      <Columns>
+        <ColumnInfo Id="COD_PRO" Caption="Producto" />
+      </Columns>
+    </ListView>
+    <DetailView Id="VEN_RUTA_DEL_DetailView" Caption="Producto Devuelto">
+      <Items>
+        <PropertyEditor Id="CANTIDAD" Caption="Cantidad" />
+        <PropertyEditor Id="COD_PRO" Caption="Producto" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="VEN_RUTA_DEL" Caption=" ">
+              <LayoutGroup Id="VEN_RUTA_DEL_col2" Caption="VEN_RUTA_DEL_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="VEN_RUTA_VTA_DetailView" Caption="Venta Producto">
+      <Items>
+        <PropertyEditor Id="CANTIDAD" Caption="Cantidad" />
+        <PropertyEditor Id="COD_PRO" Caption="Producto" />
+        <PropertyEditor Id="DESCUENTO" Caption="Descuento" />
+        <PropertyEditor Id="NETO" Caption="Neto" DisplayFormat="{0:N0}" EditMask="N0" />
+        <PropertyEditor Id="PRECIO" Caption="Precio" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="VEN_RUTA_VTA" Caption=" ">
+              <LayoutGroup Id="VEN_RUTA_VTA_col2" Caption="VEN_RUTA_VTA_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

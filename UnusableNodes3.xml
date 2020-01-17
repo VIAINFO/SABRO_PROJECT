@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ENTREGAR_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ENC_ORDEN">
+              <LayoutGroup Id="ENC_ORDEN_col1">
+                <LayoutItem Id="MiBotnes" ViewItem="MiBotnes" />
+                <LayoutItem Id="MIBOTON" ViewItem="MIBOTON" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ENC_ENTREGAS_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="simpleButton" ViewItem="simpleButton" />
+            <LayoutItem Id="BT_TERMINAR" ViewItem="BT_TERMINAR" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

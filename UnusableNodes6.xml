@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ENTREGAR_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ENC_ORDEN">
+              <LayoutGroup Id="ENC_ORDEN_col1">
+                <LayoutItem Id="ENC_ENTREGASs" ViewItem="ENC_ENTREGASs" />
+                <LayoutItem Id="MiBotnes" ViewItem="MiBotnes" />
+                <LayoutItem Id="MIBOTON" ViewItem="MIBOTON" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CON_RENDICION_DET_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Photo_Group" Direction="Vertical" RelativeSize="42.443064182194618">
+            <LayoutItem Id="Photo" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CON_RENDICION_DET_ListView">
+      <RowLayout Id="RowLayout">
+        <RowLayoutItem Id="COS_USUARIO" Column="MONTO" Removed="True" />
+      </RowLayout>
+    </ListView>
+  </Views>
+</Application>
